@@ -21,7 +21,7 @@ Subject: Don't require libdb for arpd
 +++ iproute2-6.5.0/debian/iproute2.install	2023-11-02 12:17:03.426917303 +0000
 @@ -1,6 +1,5 @@
  usr/include/iproute2/
- usr/lib/iproute2/
+ usr/share/iproute2/
 -sbin/arpd /usr/sbin
  sbin/bridge
  sbin/dcb
