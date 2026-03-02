@@ -18,13 +18,13 @@ diff --color -Naur a/debian/control b/debian/control
  Breaks: iproute2-doc
  Replaces: iproute2-doc
  Depends: ${misc:Depends}, ${shlibs:Depends}, libcap2-bin,
-diff --color -Naur a/debian/iproute2.install b/debian/iproute2.install
---- a/debian/iproute2.install	2024-05-07 12:45:53.636079727 +0200
-+++ b/debian/iproute2.install	2024-05-07 12:46:47.636021373 +0200
+diff -Naur a/debian/iproute2.install b/debian/iproute2.install
+--- a/debian/iproute2.install	2026-02-23 01:01:27
++++ b/debian/iproute2.install	2026-03-02 13:02:06
 @@ -1,6 +1,5 @@
  usr/include/iproute2/
  usr/share/iproute2/
 -sbin/arpd /usr/sbin
- sbin/bridge
- sbin/dcb
- sbin/devlink
+ sbin/bridge /usr/sbin/
+ sbin/dcb /usr/sbin/
+ sbin/devlink /usr/sbin/
